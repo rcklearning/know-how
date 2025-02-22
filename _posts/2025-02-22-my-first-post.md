@@ -2,7 +2,7 @@
 title: 'The Power Pages Paradox - How the Design Studio, Dataverse and the Portal Management App Work Together'
 date: 2025-02-22
 author: Robert Knowles
-permalink: /posts/2025/my-first-post
+permalink: /posts/2025/pp-paradox-partone
 tags:
   - power pages
   - new developers
