@@ -8,12 +8,7 @@ tags:
   - new developers
 ---
 
-The Power Pages Paradox
-==============
-
-## Tips for working across the Design Studio and Portal Management apps without losing your mind!
-
-### Part 1 - Where do I start and why?
+## Part 1 - Where do I start and why?
 
 Working in different parts of the Power Platform is a given when creating well-rounded solutions. Even when Microsoft gives us the tools to avoid opening multiple tabs, I will often find I leave the Default solution open somewhere for quick reference. Largely though, I can navigate to make.powerapps and go from there.
 
