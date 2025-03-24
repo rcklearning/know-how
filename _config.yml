@@ -13,7 +13,7 @@ title                    : "Know-How"
 title_separator          : "-"
 name                     : &name "RC Knowles"
 description              : &description "This is my personal blog and portfolio"
-url                      : https://rcklearning.github.io/rcksolutions # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://rcklearning.github.io/know-how # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rcklearning/know-how.github.io"
 
