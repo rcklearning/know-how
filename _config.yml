@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-UK"
 site_theme               : "default"
-title                    : "RCK Solutions"
+title                    : "Know-How"
 title_separator          : "-"
 name                     : &name "RC Knowles"
 description              : &description "This is my personal blog and portfolio"
 url                      : https://rcklearning.github.io/rcksolutions # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "rcklearning/rcksolutions.github.io"
+repository               : "rcklearning/know-how.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -72,7 +72,7 @@ publication_category:
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
