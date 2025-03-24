@@ -16,7 +16,7 @@ Custom components are a brilliant way to add content and functionality to your p
 
 The power of Jquery and Liquid allows you to add a component to an existing field (or fields!), just like you would add a PCF when creating a model-driven app. In this blog I'll demonstrate how a custom component can be added to fields on your basic or multi-step forms.
 
-Power Pages custom components are a well-documented feature, but the official documentation largely focuses on adding standalone components such as Card galleries. However, as demonstrated by Nick Doelman and the xyz team in their recent posts, the parameters element of custom components allows virtually anything to be passed in - including field names. As power pages sites render form fields with a standard ID - the field's logical name - we can use Jquery to easily add functionality to an individual fields via our component - the field name parameter just determines which field to add it to!
+Power Pages custom components are a well-documented feature, but the official documentation largely focuses on adding standalone components such as Card galleries. However, as demonstrated by Nick Doelman (here) and the Power Pro Dev team (in their recent videos), the parameters element of custom components allows virtually anything to be passed in - including field names. As power pages sites render form fields with a standard ID - the field's logical name - we can use Jquery to easily add functionality to an individual fields via our component - the field name parameter just determines which field to add it to!
 
 To demonstrate this, let's walk through an example. We'll create a custom component that allows users to enter a number in the Length unit of their choice and then converts it on our form's field to ensure we're collecting data in a consistent unit - in our case Kilometres(Km) . Our component will be created independent of any field, but can easily be applied from the Design Studio as required just by passing in the logical name of the field.
 
@@ -73,7 +73,7 @@ var userInput = `<input
   maxlength="10000000"
   />`
 
-var compHtml = `<label for="unitSelect">Choose a unit:</label>
+var unitSelect = `<label for="unitSelect">Choose a unit:</label>
   <select name="unit" id="unitSelect">
   <option value="kilometre">Kilometres</option>
   <option value="centimetre">Centimetres</option>
@@ -84,7 +84,7 @@ var compHtml = `<label for="unitSelect">Choose a unit:</label>
   <option value="inch">Inches</option>
 </select>`
 
-$("#length_label").append(compHtml);
+$("#length_label").append(unitSelect);
 $("#length_label").append(userInput);
 
 </script>
@@ -100,7 +100,7 @@ $("#unitSelect").on("change", convertFunction);
 function convertFunction(){
     console.log("triggered!")
     let value = $("#userValue").val();
-    let unit = $("#unit-select").val();
+    let unit = $("#unitSelect").val();
     convert(unit, value);
 }
 
@@ -193,7 +193,7 @@ But wait - there's more! Our component only works for Length, but the problem I 
         { 
         "id": "defaultUnit", 
         "displayName": "Default Unit", 
-        "description": "Enter the unit type - either 'Length' or 'Mass'. This will determine the conversion options and the default - Kg for mass, Meter for distance" 
+        "description": "Enter the unit type - either 'Length' or 'Mass'. This will also determine the conversion options and the default - Kg for Mass, Km for Length" 
         }] 
     } 
 {% endmanifest %} 
@@ -219,8 +219,8 @@ var userInput = `<input
   <option value="inch">Inches</option>
 </select>`
 {% elsif defaultUnit == "Mass" %}
- var compHtml = `<label for="unit-select">Choose a unit:</label>
-  <select name="unit" id="unit-select">
+ var unitSelect = `<label for="unitSelect">Choose a unit:</label>
+  <select name="unit" id="unitSelect">
   <option value="kilogram">Kilos</option>
   <option value="gram">Grams</option>
   <option value="ounce">Ounces</option>
@@ -230,16 +230,13 @@ var userInput = `<input
 
 {% endif %}
 
-   var conversion = " (Unit: {{ defaultUnit }})"
    var field = "{{ fieldLogicalName | escape }}"
-   $("#" + field + "_label").append(conversion);
-   $("#" + field + "_label").append(compHtml);
+   $("#" + field + "_label").append(unitSelect);
    $("#" + field + "_label").append(userInput);
    $("#userValue").on("change", convertFunction);
    $("#unit-select").on("change", convertFunction);
 
 function convertFunction(){
-    console.log("triggered!")
     let value = $("#userValue").val();
     let unit = $("#unit-select").val();
     convert(unit, value);
@@ -247,7 +244,7 @@ function convertFunction(){
 
 function convert(unit, value){
    switch(unit) {
-  case "centimetre":
+  case "Centimetre":
     $("#" + field).val(value/100000);
     break;
   case "metre":
