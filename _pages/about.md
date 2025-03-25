@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my new blog - Know-How: A Power Pages blog
+Welcome to "Know-How": A Power Pages blog
 ======
 
 I am a senior Power Platform developer who lives and breathes the product. This is my new blog to showcase my ideas, solutions and my portfolio of work.
