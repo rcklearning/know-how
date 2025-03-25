@@ -28,4 +28,4 @@ However, this is the perfect time to take a breath, take a minute, pause! Becaus
 
 For more info
 ------
-This site is built on GitHub Pages w/Jekyll using a brilliant template called 'Academic Pages' - https://github.com/academicpages/academicpages.github.io. The great thing about this approach is it uses Liquid behind the scenes so has been a great way to use and test skills which can be applied directly in Power Pages.
+This site is built on GitHub Pages w/Jekyll using a brilliant template called ['Academic Pages'](https://github.com/academicpages/academicpages.github.io). The great thing about this approach is it uses Liquid behind the scenes so has been a great way to use and test skills which can be applied directly in Power Pages.
