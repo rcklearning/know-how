@@ -22,7 +22,7 @@ repository               : "rcklearning/know-how.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "k-h-logo.jpeg"
   name             : "RC Knowles"
   bio              : "Power Platform Developer"
   #employer         : "Red Brick University"
