@@ -1,21 +1,19 @@
 ---
 permalink: /
-title: "This is my personal portfolio and blog. Its built on Github Pages, using the briliant Academic Pages template."
+title: "Welcome to Know-How: A Power Platform blog"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome to "Know-How": A Power Pages blog
-======
 
-I am a senior Power Platform developer who lives and breathes the product. This is my first-ever blog, designed to showcase my ideas, solutions and my portfolio of work in the Power Pages space and beyond. 
+I am a senior Power Platform developer who lives and breathes the product. This is my first-ever blog, designed to showcase my ideas, solutions and my portfolio of work in the Power Platform space and beyond. 
 
 
 What to Expect
 ======
-1. Deep-dives into new Power Pages features
+1. Deep-dives into new features
 1. Exploring functionality in new ways to add value
 1. Tutorials to help address pain points
 1. Post collections focused on specific users groups, components or integrations
