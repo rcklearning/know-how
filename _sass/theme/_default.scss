@@ -8,7 +8,7 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
-$teal                       : #d3eaed;
+$ourTeal                    : #d3eaed;
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
@@ -32,7 +32,7 @@ $sidebar-screen-min-width   : 1024px;
     --global-base-color                 : #{$gray};
     --global-bg-color                   : #fff;
     --global-border-color               : #{$lighter-gray};
-    --global-code-background-color      : #{teal};
+    --global-code-background-color      : #{$ourTeal};
     --global-code-text-color            : #000000;
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
     --global-link-color                 : #2f7f93;
